@@ -16,14 +16,6 @@
         <!-- Custom styles -->
         <link rel="stylesheet" href="css/app.css" />
 
-        <!-- MDB -->
-        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> -->
-        <script type="text/javascript" src="js/mdb.min.js"></script>
-        <!-- Custom scripts -->
-        <script type="text/javascript" src="js/app.js"></script>
-        <script type="text/javascript">
-        </script>
-
     </head>
     <body class="admin">
         <!--Main Navigation-->
@@ -69,17 +61,26 @@
                                             <h5 class="card-title mb-4"><strong>Create</strong> an account.</h5>
                                             <div class="row mb-3">
                                                 <div class="col-12">
-                                                    <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div><!-- form-group -->
+                                                    <div class="form-outline">
+                                                        <input type="email" id="create-email" name="email" placeholder="Email" class="form-control form-control-lg" />
+                                                        <label class="form-label" for="create-email">Email</label>
+                                                    </div><!-- form-outline -->
                                                 </div><!-- col-12 -->
                                             </div><!-- row -->
                                             <div class="row mb-3">
                                                 <div class="col-12">
-                                                    <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div><!-- form-group -->
+                                                    <div class="form-outline">
+                                                        <input type="password" id="create-password" name="password" placeholder="Password" class="form-control form-control-lg" />
+                                                        <label class="form-label" for="create-password">Password</label>
+                                                    </div><!-- form-outline -->
                                                 </div><!-- col-12 -->
                                             </div><!-- row -->
                                             <div class="row mb-3">
                                                 <div class="col-12">
-                                                    <div class="form-group"><input class="form-control" type="password" name="password-repeat" placeholder="Password (repeat)"></div><!-- form-group -->
+                                                    <div class="form-outline">
+                                                        <input type="password" id="create-password2" name="password2" placeholder="Password" class="form-control form-control-lg" />
+                                                        <label class="form-label" for="create-password2">Password (repeat)</label>
+                                                    </div><!-- form-outline -->
                                                 </div><!-- col-12 -->
                                             </div><!-- row -->
                                             <div class="row mb-3">
@@ -116,12 +117,18 @@
                                             <h5 class="card-title mb-4"><strong>Login</strong> to your account.</h5>
                                             <div class="row mb-3">
                                                 <div class="col-12">
-                                                    <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div><!-- form-group -->
+                                                    <div class="form-outline">
+                                                        <input type="email" id="login-email" name="email" placeholder="Email" class="form-control form-control-lg" />
+                                                        <label class="form-label" for="login-email">Email</label>
+                                                    </div><!-- form-outline -->
                                                 </div><!-- col-12 -->
                                             </div><!-- row -->
                                             <div class="row mb-3">
                                                 <div class="col-12">
-                                                    <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div><!-- form-group -->
+                                                    <div class="form-outline">
+                                                        <input type="password" id="login-password" name="password" placeholder="Password" class="form-control form-control-lg" />
+                                                        <label class="form-label" for="login-password">Password</label>
+                                                    </div><!-- form-outline -->
                                                 </div><!-- col-12 -->
                                             </div><!-- row -->
                                             <div class="row mb-3">
@@ -153,7 +160,10 @@
                                             <h5 class="card-title mb-4"><strong>Reset</strong> to your login information.</h5>
                                             <div class="row mb-3">
                                                 <div class="col-12">
-                                                    <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div><!-- form-group -->
+                                                    <div class="form-outline">
+                                                        <input type="email" id="reset-email" name="email" placeholder="Email" class="form-control form-control-lg" />
+                                                        <label class="form-label" for="reset-email">Email</label>
+                                                    </div><!-- form-outline -->
                                                 </div><!-- col-12 -->
                                             </div><!-- row -->
                                             <div class="row mb-3">
@@ -182,86 +192,6 @@
         <!-- Footer -->
         <footer class="fixed-bottom text-center text-lg-start bg-light text-muted">
 
-            <!-- Section: Links  -->
-            <section class="pt-1 border-top">
-                <div class="container text-center text-md-start mt-5">
-                <!-- Grid row -->
-                <div class="row mt-3">
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                    <!-- Content -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                        [Company name]
-                    </h6>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
-                        eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
-                        sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis.
-                    </p>
-                    </div>
-                    <!-- Grid column -->
-        
-                    <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                    <p><i class="fas fa-home me-3"></i> [Address. City, State, Zip]</p>
-                    <p>
-                        <i class="fas fa-envelope me-3"></i>
-                        [Contact email address]
-                    </p>
-                    <p><i class="fas fa-phone me-3"></i> [Contact Phone]</p>
-                    </div>
-                    <!-- Grid column -->
-        
-                    <!-- Grid column -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                        Product section
-                    </h6>
-                    <p>
-                        <a href="#!" class="text-reset">Area 1</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">Area 2</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">Area 3</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">Area 4</a>
-                    </p>
-                    </div>
-                    <!-- Grid column -->
-        
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                        Useful links
-                    </h6>
-                    <p>
-                        <a href="#!" class="text-reset">Links 1</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">Links 2</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">Links 2</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">Links 3</a>
-                    </p>
-                    </div>
-                    <!-- Grid column -->
-        
-                </div>
-                <!-- Grid row -->
-                </div>
-            </section>
-            <!-- Section: Links  -->
-
             <!-- Copyright -->
             <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
             © 2023 Copyright: [Company name]
@@ -271,4 +201,12 @@
         <!-- Footer -->
 
     </body>
+
+    <!-- MDB -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript">
+    </script>
 </html>

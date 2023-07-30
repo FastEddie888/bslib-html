@@ -109,3 +109,8 @@ body.admin {
 .text-underline {
     text-decoration: underline;
 }
+
+/* Form input overrides */
+.form-outline .form-control[readonly] {
+  background-color: #F8F8F8;
+}

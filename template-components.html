@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="robots" content="noindex, nofollow" />
+        <title>Component template</title>
+        <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        <!-- Google Fonts Roboto -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+        <!-- MDB -->
+        <link rel="stylesheet" href="css/mdb.min.css" />
+        <!-- Custom styles -->
+        <link rel="stylesheet" href="css/app.css" />
+
+    </head>
+    <body class="admin">
+        <!--Main Navigation-->
+        <header>
+        
+            <!-- Navbar -->
+            <nav
+                id="main-navbar"
+                class="navbar navbar-expand-lg navbar-light bg-white fixed-top"
+                >
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+        
+                <!-- Brand -->
+                <a class="navbar-brand" href="javascript:void(0);">
+                <img
+                    src="https://fakeimg.pl/100x38/cccccc/909090?text=Logo&font=noto"
+                    height="25"
+                    alt=""
+                    loading="lazy"
+                    />
+                </a>
+                
+            </div>
+            <!-- Container wrapper -->
+            </nav>
+            <!-- Navbar -->
+        </header>
+        <!--Main Navigation-->
+        
+        <!--Main layout-->
+        <main class="content" style="margin-top: 58px;margin-bottom: 74px;">
+            <div class="container pt-4">
+            
+                <!--Section: Typography -->
+                <section class="typography-box my-4">
+                    <h1 class="page-title mb-4"><strong>Components</strong> template examples</h1>
+                    <div class="row">
+                        <div class="col-12">
+                            <a name="input"></a>
+                            <div class="card mb-3 rounded-3 bg-white">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-4"><strong>Form input variants</strong> component examples.</h5>
+                                    <div class="row mb-3">
+                                        <div class="col-12">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="w-50">Input type</th>
+                                                            <th class="w-50">Example</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>
+                                                                        &lt;div class="form-outline"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="input1" class="form-control form-control-lg" /&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="form-label" for="input1"&gt;Basic input text&lt;/label&gt;<br />
+                                                                        &lt;/div&gt;
+                                                                    </code>
+                                                                </div><!-- note -->
+                                                                
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-outline" style="width:20em;">
+                                                                    <input type="text" id="input1" class="form-control form-control-lg" />
+                                                                    <label class="form-label" for="input1">Basic input text</label>
+                                                                </div><!-- form-outline -->
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>
+                                                                        &lt;div class="form-outline"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="input2" class="form-control form-control-lg <strong>is-invalid</strong>" value="XXXXXXX" /&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="form-label" for="input2"&gt;Validation failed input text&lt;/label&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;div class="invalid-feedback"&gt;Error: message displays here.&lt;/div&gt;</strong><br />
+                                                                        &lt;/div&gt;
+                                                                    </code>
+                                                                </div><!-- note -->
+                                                                
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-outline" style="width:20em;">
+                                                                    <input type="text" id="input2" class="form-control form-control-lg is-invalid" value="XXXXXXX" />
+                                                                    <label class="form-label" for="input2">Validation failed input text</label>
+                                                                    <div class="invalid-feedback">Error: message displays here.</div>
+                                                                </div><!-- form-outline -->
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>
+                                                                        &lt;div class="form-outline"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="input3" class="form-control form-control-lg" <strong>disabled</strong> value="XXXXXX" /&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="form-label" for="input3"&gt;Disabled input text&lt;/label&gt;<br />
+                                                                        &lt;/div&gt;
+                                                                    </code>
+                                                                </div><!-- note -->
+                                                                
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-outline" style="width:20em;">
+                                                                    <input type="text" id="input3" class="form-control form-control-lg" disabled value="XXXXXX" />
+                                                                    <label class="form-label" for="input3">Disabled input text</label>
+                                                                </div><!-- form-outline -->
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>
+                                                                        &lt;div class="form-outline"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="input4" class="form-control form-control-lg" <strong>readonly</strong> value="XXXXXX" /&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="form-label" for="input4"&gt;Readonly input text&lt;/label&gt;<br />
+                                                                        &lt;/div&gt;
+                                                                    </code>
+                                                                </div><!-- note -->
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-outline" style="width:20em;">
+                                                                    <input type="text" id="input4" class="form-control form-control-lg" readonly value="XXXXXX" />
+                                                                    <label class="form-label" for="input4">Readonly input text</label>
+                                                                </div><!-- form-outline -->
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>
+                                                                        &lt;div class="form-outline"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input <strong>type="password"</strong> id="input5" class="form-control form-control-lg" /&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="form-label" for="input5"&gt;Password input text&lt;/label&gt;<br />
+                                                                        &lt;/div&gt;
+                                                                    </code>
+                                                                </div><!-- note -->
+                                                                
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-outline" style="width:20em;">
+                                                                    <input type="password" id="input5" class="form-control form-control-lg" />
+                                                                    <label class="form-label" for="input5">Password input text</label>
+                                                                </div><!-- form-outline -->
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>
+                                                                        &lt;div class="form-outline"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="input6" <strong>aria-describedby="helptext6</strong>" class="form-control form-control-lg" /&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="form-label" for="input6"&gt;Supporting help input text&lt;/label&gt;<br />
+                                                                        &lt;/div&gt;<br />
+                                                                        <strong>&lt;div id="helptext6" class="form-helper"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;Support/help text goes &lt;a href="#!" title="External link URL" class="text-underline"&gt;here&lt;/a"&gt;.<br />
+                                                                        &lt;/div"&gt;</strong>
+                                                                    </code>
+                                                                </div><!-- note -->
+                                                                
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-outline" style="width:20em;">
+                                                                    <input type="text" id="input6" aria-describedby="helptext6" class="form-control form-control-lg" />
+                                                                    <label class="form-label" for="input6">Supporting help input text</label>
+                                                                </div><!-- form-outline -->
+                                                                <div id="helptext6" class="form-helper">
+                                                                    Help text goes <a href="#!" title="External link URL" class="text-underline">here</a>.
+                                                                </div><!-- form-text -->
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>
+                                                                        &lt;div class="form-outline"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="input7" class="form-control form-control-lg" <strong>data-mdb-showcounter="true" maxlength="50"</strong> /&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="form-label" for="input7"&gt;Character counter input text&lt;/label&gt;<br />
+                                                                        <strong>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="helptext7" class="form-helper"&gt;&lt;/div&gt;<br /></strong>
+                                                                        &lt;/div&gt;<br />
+                                                                    </code>
+                                                                </div><!-- note -->
+                                                                
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-outline" style="width:20em;">
+                                                                    <input type="text" id="input7" class="form-control form-control-lg" data-mdb-showcounter="true" maxlength="50" />
+                                                                    <label class="form-label" for="input7">Character counter input text</label>
+                                                                    <div id="helptext7" class="form-helper"></div><!-- form-text -->
+                                                                </div><!-- form-outline -->
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>
+                                                                        &lt;div class="form-outline"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;i class="far fa-calendar-days trailing"&gt;&lt;/i&gt;</strong><br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="input8" class="form-control form-control-lg" /&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="form-label" for="input8"&gt;Append icon input text&lt;/label&gt;<br />
+                                                                        &lt;/div&gt;<br />
+                                                                    </code>
+                                                                </div><!-- note -->
+                                                                
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-outline" style="width:20em;">
+                                                                    <i class="far fa-calendar-days trailing"></i>
+                                                                    <input type="text" id="input8" class="form-control form-control-lg" />
+                                                                    <label class="form-label" for="input8">Append icon input text</label>
+                                                                </div><!-- form-outline -->
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>
+                                                                        &lt;div class="form-outline""&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="form-label select-label" for="input9"&gt;Dropdown input select&lt;/label&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;select id="input9" <strong>class="form-select form-control-lg"</strong>&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option selected&gt;select&lt;/option&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="1"&gt;One&lt;/option&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="2"&gt;Two&lt;/option&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="3"&gt;Three&lt;/option&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;<br />
+                                                                        &lt;/div&gt;
+                                                                    </code>
+                                                                </div><!-- note -->
+                                                                
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-outline" style="width:20em;">
+                                                                    <label class="form-label select-label" for="input9">Dropdown input select</label>
+                                                                    <select id="input9" class="form-select form-control-lg">
+                                                                        <option selected>select</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                </div><!-- form-outline -->
+                                                                
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>
+                                                                        &lt;div class="form-outline"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="form-label select-label"&gt;Checkbox label&lt;/label&gt;<br />
+                                                                        <strong>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="form-check"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="form-check-input" type="checkbox" value="" id="input10default" /&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="form-check-label" for="input10default"&gt;Default checkbox&lt;/label&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="form-check"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="form-check-input" type="checkbox" value="" id="input10checked" checked /&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="form-check-label" for="input10checked"&gt;Checked checkbox&lt;/label&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br /></strong>
+                                                                        &lt;/div&gt;
+                                                                    </code>
+                                                                </div><!-- note -->
+                                                                
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-outline" style="width:20em;">
+                                                                    <label class="form-label select-label">Checkbox label</label>
+                                                                    <!-- Default checkbox -->
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="input10default" />
+                                                                        <label class="form-check-label" for="input10default">Default checkbox</label>
+                                                                    </div>
+                                                                    <!-- Checked checkbox -->
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="input10checked" checked />
+                                                                        <label class="form-check-label" for="input10checked">Checked checkbox</label>
+                                                                    </div>
+                                                                </div><!-- form-outline -->
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>
+                                                                        &lt;div class="form-outline"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="form-label select-label"&gt;Redio buttons label&lt;/label&gt;<br />
+                                                                        <strong>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="form-check"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="form-check-input" type="radio" name="input11radio" id="input11radio1"/&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="form-check-label" for="input11radio1"&gt; Default radio &lt;/label&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="form-check"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="form-check-input" type="radio" name="input11radio" id="input11radio2" checked /&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="form-check-label" for="input11radio2"&gt; Default checked radio&lt;/label&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br /></strong>
+                                                                        &lt;/div&gt;
+                                                                    </code>
+                                                                </div><!-- note -->
+                                                                
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-outline" style="width:20em;">
+                                                                    <label class="form-label select-label">Redio buttons label</label>
+                                                                    <!-- Default checkbox -->
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="input11radio" id="input11radio1"/>
+                                                                        <label class="form-check-label" for="input11radio1"> Default radio </label>
+                                                                    </div>
+                                                                    <!-- Checked checkbox -->
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="input11radio" id="input11radio2" checked />
+                                                                        <label class="form-check-label" for="input11radio2"> Default checked radio</label>
+                                                                    </div>
+                                                                </div><!-- form-outline -->
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>
+                                                                        &lt;div class="form-outline"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="form-label select-label"&gt;Switch buttons label&lt;/label&gt;<br />
+                                                                        <strong>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="form-check form-switch"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="form-check-input" type="checkbox" role="switch" id="input12switch1" /&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="form-check-label" for="input12switch1"&gt;Default switch checkbox input&lt;/label&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="form-check form-switch"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="form-check-input" type="checkbox" role="switch" id="input12switch2" checked /&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="form-check-label" for="input12switch2"&gt;Checked switch checkbox input&lt;/label&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="form-check form-switch"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="form-check-input" type="checkbox" role="switch" id="input12switch3" disabled /&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="form-check-label" for="input12switch3"&gt;Disabled switch checkbox input&lt;/label&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br /></strong>
+                                                                        &lt;/div&gt;
+                                                                    </code>
+                                                                </div><!-- note -->
+                                                                
+                                                            </td>
+                                                            <td>
+                                                                <div class="form-outline" style="width:20em;">
+                                                                    <label class="form-label select-label">Switch buttons label</label>
+                                                                    <!-- Default switch -->
+                                                                    <div class="form-check form-switch">
+                                                                        <input class="form-check-input" type="checkbox" role="switch" id="input12switch1" />
+                                                                        <label class="form-check-label" for="input12switch1">Default switch checkbox input</label>
+                                                                    </div>
+                                                                    <!-- Checked switch -->
+                                                                    <div class="form-check form-switch">
+                                                                        <input class="form-check-input" type="checkbox" role="switch" id="input12switch2" checked />
+                                                                        <label class="form-check-label" for="input12switch2">Checked switch checkbox input</label>
+                                                                    </div>
+                                                                    <!-- Default disabled switch -->
+                                                                    <div class="form-check form-switch">
+                                                                        <input class="form-check-input" type="checkbox" role="switch" id="input12switch3" disabled />
+                                                                        <label class="form-check-label" for="input12switch3">Disabled switch checkbox input</label>
+                                                                    </div>
+                                                                </div><!-- form-outline -->
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div><!-- table-responsive -->
+                                        </div><!-- col-12 -->
+                                    </div><!-- row -->
+                                </div><!-- card-body -->
+                            </div><!-- card -->
+                        </div><!-- col-12 -->
+                    </div><!-- row -->
+                    <div class="row">
+                        <div class="col-12">
+                            <a name="buttons"></a>
+                            <div class="card mb-3 rounded-3 bg-white">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-4"><strong>Button variants</strong> component examples.</h5>
+                                    <div class="row mb-3">
+                                        <div class="col-12">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="w-50">Buttons type</th>
+                                                            <th class="w-50">Example</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>&lt;button type="button" class="<strong>btn btn-primary</strong> text-nowrap" aria-label="Input primary button"&gt;Input primary button&lt;/button&gt;</code>
+                                                                </div><!-- note -->
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>&lt;a href="#!" class="<strong>btn btn-primary</strong> text-nowrap" aria-label="Anchor primary button"&gt;Anchor primary button&lt;/a&gt;</code>
+                                                                </div><!-- note -->
+                                                                
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-primary text-nowrap me-3" aria-label="Input primary button">Input primary button</button>
+                                                                OR
+                                                                <a href="#!" class="btn btn-primary text-nowrap ms-3" aria-label="Anchor primary button">Anchor primary button</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>&lt;button type="button" class="<strong>btn btn-secondary</strong> text-nowrap" aria-label="Input secondary button"&gt;Input secondary button&lt;/button&gt;</code>
+                                                                </div><!-- note -->
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>&lt;a href="#!" class="<strong>btn btn-secondary</strong> text-nowrap" aria-label="Anchor secondary button"&gt;Anchor secondary button&lt;/a&gt;</code>
+                                                                </div><!-- note -->
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-secondary text-nowrap me-3" aria-label="Input secondary button">Input secondary button</button>
+                                                                OR
+                                                                <a href="#!" class="btn btn-secondary text-nowrap ms-3" aria-label="Anchor secondary button">Anchor secondary button</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>&lt;button type="button" class="<strong>btn btn-tertiary</strong> text-nowrap" aria-label="Input tertiary button"&gt;Input tertiary button&lt;/button&gt;</code>
+                                                                </div><!-- note -->
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>&lt;button type="button" class="<strong>btn btn-tertiary</strong> text-nowrap" aria-label="Input tertiary button"&gt;Input tertiary button&lt;/button&gt;</code>
+                                                                </div><!-- note -->
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-tertiary text-nowrap me-3">Input tertiary text button</button>
+                                                                OR
+                                                                <a href="#!" class="btn btn-tertiary text-nowrap ms-3" aria-label="Anchor tertiary button">Anchor tertiary button</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="w-50">Variant input type</th>
+                                                            <th class="w-50">Example</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>&lt;button type="button" class="<strong>btn btn-light</strong> text-nowrap" aria-label="Neutral light button"&gt;Neutral light button&lt;/button&gt;</code>
+                                                                </div><!-- note -->
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-light text-nowrap">Neutral light button</button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>&lt;button type="button" class="<strong>btn btn-dark</strong> text-nowrap" aria-label="Neutral dark button"&gt;Neutral dark button&lt;/button&gt;</code>
+                                                                </div><!-- note -->
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-dark text-nowrap">Neutral dark button</button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>&lt;button type="button" class="<strong>btn btn-outline-primary</strong> text-nowrap" aria-label="Input primary outline button"&gt;Input primary outline button&lt;/button&gt;</code>
+                                                                </div><!-- note -->
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-outline-primary text-nowrap">Input primary outline button</button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>&lt;button type="button" class="<strong>btn btn-outline-secondary</strong> text-nowrap" aria-label="Input secondary outline button"&gt;Input secondary outline button&lt;/button&gt;</code>
+                                                                </div><!-- note -->
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-outline-secondary text-nowrap">Input secondary outline button</button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>&lt;button type="button" class="<strong>btn btn-primary btn-floating</strong> text-nowrap" aria-label="Floating icon button"&gt;&lt;i class="fas fa-download"&gt;&lt;/i&gt;&lt;/button&gt;</code>
+                                                                </div><!-- note -->
+                                                            </td>
+                                                            <td>
+                                                                <h6>Floating icon button</h6>
+                                                                <button type="button" class="btn btn-primary btn-floating text-nowrap" aria-label="Floating icon button"><i class="fas fa-download"></i></button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>&lt;button type="button" class="btn btn-primary <strong>active</strong> text-nowrap" aria-label="Input primary button"&gt;Input primary button&lt;/button&gt;</code>
+                                                                </div><!-- note -->
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>&lt;button type="button" class="btn btn-secondary <strong>active</strong> text-nowrap" aria-label="Input secondary button"&gt;Input secondary button&lt;/button&gt;</code>
+                                                                </div><!-- note -->
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-primary active text-nowrap me-3" aria-label="Input primary active button">Input primary active button</button>
+                                                                <button type="button" class="btn btn-secondary active text-nowrap me-3" aria-label="Input secondary active button">Input secondary active button</button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>&lt;button type="button" class="btn btn-primary text-nowrap" <strong>disabled</strong> aria-label="Input primary disabled button"&gt;Input primary disabled button&lt;/button&gt;</code>
+                                                                </div><!-- note -->
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>&lt;button type="button" class="btn btn-secondary text-nowrap" <strong>disabled</strong> aria-label="Input secondary disabled button"&gt;Input secondary disabled button&lt;/button&gt;</code>
+                                                                </div><!-- note -->
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-primary text-nowrap me-3" disabled aria-label="Input primary disabled button">Input primary disabled button</button>
+                                                                <button type="button" class="btn btn-secondary text-nowrap me-3" disabled aria-label="Input secondary disabled button">Input secondary disabled button</button>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div><!-- table-responsive -->
+                                        </div><!-- col-12 -->
+                                    </div><!-- row -->
+
+                                </div><!-- card-body -->
+                            </div><!-- card -->
+                        </div><!-- col-12 -->
+                    </div><!-- row -->
+                    <div class="row">
+                        <div class="col-12">
+                            <a name="cards"></a>
+                            <div class="card mb-3 rounded-3 bg-white">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-4"><strong>Card</strong> component examples.</h5>
+                                    <div class="row mb-3">
+                                        <div class="col-12">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="w-50">Card type</th>
+                                                            <th class="w-50">Example</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>&lt;div class="card"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-header"&gt;&lt;h4&gt;Card title&lt;/h4&gt;&lt;/div&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-body"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6 class="card-title"&gt;Sub title&lt;/h6&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque nunc egestas interdum tincidunt. Donec mauris mauris, dapibus vel vestibulum a, lacinia sed libero. Vestibulum faucibus commodo neque, sed volutpat risus congue id. Donec vehicula ante a arcu suscipit, id volutpat leo cursus.&lt;/p&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-footer  border-0 text-center"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" class="btn btn-tertiary me-3"&gt;Back action&lt;/button&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" class="btn btn-secondary me-3"&gt;Secondary action&lt;/button&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" class="btn btn-primary"&gt;Primary action&lt;/button&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                                                                        &lt;/div&gt;</code>
+                                                                </div><!-- note -->
+                                                                
+                                                            </td>
+                                                            <td>
+                                                                <div class="card">
+                                                                    <div class="card-header"><h4>Card title</h4></div>
+                                                                    <div class="card-body">
+                                                                        <h6 class="card-title">Sub title</h6>
+                                                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque nunc egestas interdum tincidunt. Donec mauris mauris, dapibus vel vestibulum a, lacinia sed libero. Vestibulum faucibus commodo neque, sed volutpat risus congue id. Donec vehicula ante a arcu suscipit, id volutpat leo cursus.</p>
+                                                                    </div>
+                                                                    <div class="card-footer  border-0 text-center">
+                                                                        <button type="button" class="btn btn-tertiary me-3">Back action</button>
+                                                                        <button type="button" class="btn btn-secondary me-3">Secondary action</button>
+                                                                        <button type="button" class="btn btn-primary">Primary action</button>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        
+                                                    </tbody>
+                                                    
+                                                </table>
+                                            </div><!-- table-responsive -->
+                                        </div><!-- col-12 -->
+                                    </div><!-- row -->
+
+                                </div><!-- card-body -->
+                            </div><!-- card -->
+                        </div><!-- col-12 -->
+                    </div><!-- row -->
+                    <div class="row">
+                        <div class="col-12">
+                            <a name="modals"></a>
+                            <div class="card mb-3 rounded-3 bg-white">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-4"><strong>Modal Popup</strong> component examples.</h5>
+                                    <div class="row mb-3">
+                                        <div class="col-12">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="w-50">Card type</th>
+                                                            <th class="w-50">Example</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>&lt;button type="button" class="btn btn-primary" data-mdb-toggle="modal" ata-mdb-target="#exampleModal"&gt;Launch demo modal&lt;/button&gt;</code>
+                                                                </div><!-- note -->
+                                                                <div class="note note-secondary mb-3">
+                                                                    <code>&lt;div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="static" data-mdb-keyboard="false"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="modal-content"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="modal-header"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5 class="modal-title" id="exampleModalLabel"&gt;Modal title&lt;/h5&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"&gt;&lt;/button&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="modal-body"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h6 class="card-title"&gt;Sub title&lt;/h6&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque nunc egestas interdum tincidunt. Donec mauris mauris, dapibus vel vestibulum a, lacinia sed libero. Vestibulum faucibus commodo neque, sed volutpat risus congue id. Donec vehicula ante a arcu suscipit, id volutpat leo cursus.&lt;/p&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque nunc egestas interdum tincidunt. Donec mauris mauris, dapibus vel vestibulum a, lacinia sed libero. Vestibulum faucibus commodo neque, sed volutpat risus congue id. Donec vehicula ante a arcu suscipit, id volutpat leo cursus.&lt;/p&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque nunc egestas interdum tincidunt. Donec mauris mauris, dapibus vel vestibulum a, lacinia sed libero. Vestibulum faucibus commodo neque, sed volutpat risus congue id. Donec vehicula ante a arcu suscipit, id volutpat leo cursus.&lt;/p&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-footer  border-0 text-center"&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" class="btn btn-tertiary me-3" data-mdb-dismiss="modal"&gt;Back action&lt;/button&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" class="btn btn-secondary me-3" data-mdb-dismiss="modal"&gt;Secondary action&lt;/button&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" class="btn btn-primary" data-mdb-dismiss="modal"&gt;Primary action&lt;/button&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                                                                        &lt;/div&gt;</code>
+                                                                </div><!-- note -->
+                                                                
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal">Launch demo modal</button>
+                                                                <!-- Modal -->
+                                                                <div class="modal fade" id="exampleModal" tabindex="-1" 
+                                                                aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="static"                                                                 data-mdb-keyboard="false">
+                                                                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                                                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                                                                            </div>
+                                                                            <div class="modal-body">
+                                                                                <h6 class="card-title">Sub title</h6>
+                                                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque nunc egestas interdum tincidunt. Donec mauris mauris, dapibus vel vestibulum a, lacinia sed libero. Vestibulum faucibus commodo neque, sed volutpat risus congue id. Donec vehicula ante a arcu suscipit, id volutpat leo cursus.</p>
+                                                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque nunc egestas interdum tincidunt. Donec mauris mauris, dapibus vel vestibulum a, lacinia sed libero. Vestibulum faucibus commodo neque, sed volutpat risus congue id. Donec vehicula ante a arcu suscipit, id volutpat leo cursus.</p>
+                                                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque nunc egestas interdum tincidunt. Donec mauris mauris, dapibus vel vestibulum a, lacinia sed libero. Vestibulum faucibus commodo neque, sed volutpat risus congue id. Donec vehicula ante a arcu suscipit, id volutpat leo cursus.</p>
+                                                                            </div>
+                                                                            <div class="card-footer  border-0 text-center">
+                                                                                <button type="button" class="btn btn-tertiary me-3" data-mdb-dismiss="modal">Back action</button>
+                                                                                <button type="button" class="btn btn-secondary me-3" data-mdb-dismiss="modal">Secondary action</button>
+                                                                                <button type="button" class="btn btn-primary" data-mdb-dismiss="modal">Primary action</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        
+                                                    </tbody>
+                                                    
+                                                </table>
+                                            </div><!-- table-responsive -->
+                                        </div><!-- col-12 -->
+                                    </div><!-- row -->
+
+                                </div><!-- card-body -->
+                            </div><!-- card -->
+                        </div><!-- col-12 -->
+                    </div><!-- row -->
+                </section>
+                <!--Section: Typography -->
+            
+
+            </div><!-- container -->
+        </main>
+        <!--Main layout-->
+
+        <!-- Footer -->
+        <footer class="fixed-bottom text-center text-lg-start bg-light text-muted">
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2023 Copyright: [Company name]
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+    </body>
+
+    <!-- MDB -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript">
+    </script>
+</html>
